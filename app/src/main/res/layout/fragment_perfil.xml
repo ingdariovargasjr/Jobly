@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        tools:context=".ui.PerfilFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/perfil1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/titleName"
+                    android:layout_width="298dp"
+                    android:layout_height="82dp"
+                    android:layout_below="@+id/img_profile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/avenir_bold"
+                    android:text="Dario Maldonado Vargas"
+
+                    android:textColor="#000"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_profile1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Miembro desde Enero 2021"
+                    android:fontFamily="@font/avenir_medium"
+                    android:layout_below="@+id/titleName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/txt_profile2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion"
+                    android:fontFamily="@font/avenir_medium"
+                    android:layout_below="@+id/txt_profile1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+52 833 476 8455"
+                    android:fontFamily="@font/avenir_medium"
+                    android:layout_below="@+id/txt_profile2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/r_septiem_yobli_com"
+                    android:fontFamily="@font/avenir_medium"
+                    android:layout_below="@+id/txt_phone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_edit_profile"
+                    android:layout_width="217dp"
+                    android:layout_height="28dp"
+                    android:layout_below="@+id/txt_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/bottoms"
+                    android:fontFamily="@font/avenir_bold"
+                    android:text="@string/editar_perfil"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/txt_btn" />
+
+                <LinearLayout
+                    android:id="@+id/directions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_edit_profile"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/avenir_medium"
+                        android:textColor="@color/black"
+                        android:text="@string/mis_direcciones"/>
+
+                    <Button
+                        android:id="@+id/btn_add_directions"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bottom_color"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="+"
+                        android:textColor="@drawable/txt_btn_color"
+                        android:layout_marginTop="7dp"/>
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_directions"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="100dp"
+                    android:fontFamily="@font/avenir_bold"
+                    android:layout_below="@+id/directions"/>
+
+
+                <LinearLayout
+                    android:id="@+id/pagos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_directions"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/avenir_medium"
+                        android:textColor="@color/black"
+                        android:text="@string/mis_m_todos_de_pago"/>
+
+                    <Button
+                        android:id="@+id/btn_add_pago"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bottom_color"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="+"
+                        android:textColor="@drawable/txt_btn_color"
+                        android:layout_marginTop="7dp"/>
+
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_pagos"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/pagos"/>
+
+
+                <Button
+                    android:id="@+id/btn_profile_yober"
+                    android:layout_width="260dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bottom_color"
+                    android:text="@string/perfil_yober"
+                    android:layout_below="@+id/list_pagos"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@drawable/txt_btn_color"
+                    android:layout_marginTop="10sp"/>
+
+                <Button
+                    android:id="@+id/btn_close"
+                    android:layout_width="260dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/button_warning"
+                    android:text="@string/cerrar_sesion"
+                    android:layout_below="@+id/btn_profile_yober"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/warning"
+                    android:layout_marginTop="5dp"/>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
+

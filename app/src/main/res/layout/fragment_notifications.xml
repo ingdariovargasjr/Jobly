@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/search_view"
+                android:backgroundTint="#ffffff"
+                android:drawableStart="@drawable/search"
+                android:textAlignment="center" />
+
+            <RelativeLayout
+                android:id="@+id/linearExplora"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/searchView"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/explora"
+                    android:fontFamily="@font/avenir_bold"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_Arte"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/arte" />
+
+                <TextView
+                    android:id="@+id/txt_arte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_Arte"
+                    android:layout_marginLeft="16dp"
+                    android:text="Arte/Diseño"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/img_belleza"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_toRightOf="@+id/img_Arte"
+                    android:src="@drawable/belleza" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_belleza"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/txt_arte"
+                    android:text="Belleza"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/img_mantenimiento"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_toRightOf="@+id/img_belleza"
+                    android:src="@drawable/mantenimiento" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_belleza"
+                    android:layout_marginLeft="90dp"
+                    android:layout_toRightOf="@id/txt_arte"
+                    android:text="Mantenimiento"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/img_hogar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_toRightOf="@+id/img_mantenimiento"
+                    android:src="@drawable/hogar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_belleza"
+                    android:layout_marginLeft="200dp"
+                    android:layout_toRightOf="@id/txt_arte"
+                    android:text="Hogar"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearParaMi"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/linearExplora"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/para_mi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/para_mi"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_curso"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/para_mi"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/cursos" />
+
+                <ImageView
+                    android:id="@+id/img_blog"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/img_curso"
+                    android:src="@drawable/blog" />
+
+                <ImageView
+                    android:id="@+id/img_voluntarios"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/img_blog"
+                    android:src="@drawable/voluntariado" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearYober"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/linearParaMi"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_yober"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/yobers"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_yober1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/txt_yober"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/yober1" />
+
+                <ImageView
+                    android:id="@+id/img_yober2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/img_yober1"
+                    android:src="@drawable/yober2" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

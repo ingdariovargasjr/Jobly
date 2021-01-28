@@ -15,10 +15,12 @@ class Splash : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this, ActivityRegister::class.java)
+            val intent = Intent(this, FirstActivity::class.java)
+            //val intent = Intent(this, ExploreActivity::class.java)
+            //val intent = Intent(this, NewUserActivity::class.java)
             startActivity(intent)
             finish()
-        }, 3000)
+        }, 2000)
 
     }
 }

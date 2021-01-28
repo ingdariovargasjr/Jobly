@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneRegFragment">
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:background="@drawable/back_background"
+        app:layout_constraintBottom_toTopOf="@+id/label_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+
+    <TextView
+        android:id="@+id/label_phone"
+        android:layout_width="292dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/avenir_bold"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="29sp"
+        android:text="Mi número es..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+
+    <EditText
+        android:id="@+id/editTextPhoneArea"
+        android:layout_width="86dp"
+        android:layout_height="63dp"
+        android:background="@drawable/gray_textbox"
+        android:ems="10"
+        android:fontFamily="@font/avenir_medium"
+        android:inputType="phone"
+        android:padding="70px"
+        android:text="+52"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_phone"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="234dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="448dp"
+        android:background="@drawable/gray_textbox"
+        android:ems="10"
+        android:fontFamily="@font/avenir_medium"
+        android:hint="888 888 8888"
+        android:inputType="phone"
+        android:padding="70px"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_about_you"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <Button
+        android:id="@+id/continue_about_you"
+        android:layout_width="263dp"
+        android:layout_height="57dp"
+        android:background="@drawable/bottom_color"
+        android:fontFamily="@font/avenir_bold"
+        android:text="Continuar"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <Button
+        android:id="@+id/skip_about_you"
+        android:layout_width="263dp"
+        android:layout_height="57dp"
+        android:background="@drawable/button_transparent"
+        android:fontFamily="@font/avenir_medium"
+        android:text="Saltar por ahora"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continue_about_you"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/label_conditions"
+        android:layout_width="271dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/avenir_medium"
+        android:text="Al presionar Crear Cuenta o Iniciar sesión aceptas nuestros Terminos y condiciones."
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continue_about_you"
+        app:layout_constraintVertical_bias="0.395" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

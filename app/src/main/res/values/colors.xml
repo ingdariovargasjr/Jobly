@@ -4,4 +4,16 @@
     <color name="colorPrimaryDark">#00D7FF</color>
     <color name="colorAccent">#00D7FF</color>
     <color name="colorBackground">#ECF0F1</color>
+
+    <!-- Paleta de colores Yobli -->
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray_1">#E6E6E6</color>
+    <color name="light_gray_2">#EBEDF0</color>
+    <color name="blue_yobli">#00D7FF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#838383</color>
+    <color name="dark_gray_1">#898A8D</color>
+    <color name="dark_gray_2">#50555C</color>
+    <color name="blueFacebook">#234FBF</color>
+    <color name="warning">#F31100</color>
 </resources>

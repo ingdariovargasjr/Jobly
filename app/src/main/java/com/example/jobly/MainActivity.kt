@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.facebook.AccessToken
 import com.facebook.GraphRequest
 import com.facebook.HttpMethod
@@ -20,10 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
-
-
+/*
         addFragment(ProfileFragment.newInstance())
         bottomNavigation.show(4)
         bottomNavigation.add(MeowBottomNavigation.Model(0, R.drawable.agenda))
@@ -56,8 +52,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-    }
+    }*/
 
+        /*
     private fun replaceFragment(fragment:Fragment){
         val fragmentTransition = supportFragmentManager.beginTransaction()
         fragmentTransition.replace(R.id.fragmanetContainer, fragment).addToBackStack(Fragment::class.java.simpleName).commit()
@@ -66,5 +63,6 @@ class MainActivity : AppCompatActivity() {
     private fun addFragment(fragment:Fragment){
         val fragmentTransition = supportFragmentManager.beginTransaction()
         fragmentTransition.add(R.id.fragmanetContainer, fragment).addToBackStack(Fragment::class.java.simpleName).commit()
+    }*/
     }
 }

@@ -11,8 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Yober.SplashSwitch"></activity>
+        <activity android:name=".Yober.SwitchYoberActivity" />
+        <activity
+            android:name=".ExploreYobberActivity"
+            android:label="@string/title_activity_explore_yobber" />
+        <activity android:name=".LogMail" />
+        <activity android:name=".LogOptionActivity" />
+        <activity android:name=".FirstActivity">
+
+            <!--
+            intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter
+            -->
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".ExploreActivity"
+            android:label="@string/title_activity_explore" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".ActivityRegister" />
+        <activity android:name=".NewUserActivity" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
