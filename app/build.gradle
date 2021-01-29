@@ -51,6 +51,8 @@ dependencies {
     def nav_version = "2.3.2"
 
     //Parse DB dependency
+    implementation 'com.github.parse-community.Parse-SDK-Android:parse:1.25.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
     // implementation "com.github.parse-community.Parse-SDK-Android:parse:latest.version.here"
     //Facebook
     implementation 'com.facebook.android:facebook-android-sdk:5.13.0'

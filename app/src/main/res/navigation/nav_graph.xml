@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/Inicio">
+    app:startDestination="@id/mail">
     <fragment
         android:id="@+id/mail"
-        android:name="com.example.jobly.mail"
+        android:name="com.example.jobly.login.mail"
         android:label="fragment_mail"
-        tools:layout="@layout/fragment_mail" >
+        tools:layout="@layout/fragment_mail"
+        app:startDestination="@id/action_mail_to_Inicio">
         <action
             android:id="@+id/action_mail_to_passwordFragment"
             app:destination="@id/passwordFragment" />
@@ -18,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/passwordFragment"
-        android:name="com.example.jobly.PasswordFragment"
+        android:name="com.example.jobly.login.PasswordFragment"
         android:label="fragment_password"
         tools:layout="@layout/fragment_password" >
         <action
@@ -27,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/confirmPasswordFragment"
-        android:name="com.example.jobly.ConfirmPasswordFragment"
+        android:name="com.example.jobly.login.ConfirmPasswordFragment"
         android:label="fragment_confirm_password"
         tools:layout="@layout/fragment_confirm_password" >
         <action
@@ -36,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/aboutYouFragment"
-        android:name="com.example.jobly.AboutYouFragment"
+        android:name="com.example.jobly.login.AboutYouFragment"
         android:label="fragment_about_you"
         tools:layout="@layout/fragment_about_you" >
         <action
@@ -45,7 +46,7 @@
     </fragment>
      <fragment
         android:id="@+id/photoFragment"
-        android:name="com.example.jobly.PhotoFragment"
+        android:name="com.example.jobly.login.PhotoFragment"
         android:label="fragment_photo"
         tools:layout="@layout/fragment_photo" >
         <action
@@ -54,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/phoneRegFragment"
-        android:name="com.example.jobly.PhoneRegFragment"
+        android:name="com.example.jobly.login.PhoneRegFragment"
         android:label="fragment_phone_reg"
         tools:layout="@layout/fragment_phone_reg" >
         <action
@@ -63,25 +64,22 @@
     </fragment>
     <fragment
         android:id="@+id/IDFragment"
-        android:name="com.example.jobly.IDFragment"
+        android:name="com.example.jobly.login.IDFragment"
         android:label="fragment_id"
-        tools:layout="@layout/fragment_id" >
-        <action
-            android:id="@+id/action_IDFragment_to_Explorar"
-            app:destination="@id/Explorar" />
-    </fragment>
+        tools:layout="@layout/fragment_id" />
 
     <fragment android:id="@+id/Inicio"
-        android:name="com.example.jobly.IDFragment"
+        android:name="com.example.jobly.login.IDFragment"
         android:label="fragment_id"
         tools:layout="@layout/fragment_election_reg">
         <action
             android:id="@+id/action_Inicio_to_mail"
             app:destination="@id/mail" />
     </fragment>
+    <fragment
+        android:id="@+id/success"
+        android:name="com.example.jobly.Success"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" />
 
-    <activity android:id="@+id/Explorar"
-        android:name="com.example.jobly.IDFragment"
-        android:label="fragment_id"
-        tools:layout="@layout/activity_explore"/>
 </navigation>

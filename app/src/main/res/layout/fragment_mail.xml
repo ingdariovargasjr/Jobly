@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mail">
+    tools:context=".login.mail">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -44,7 +44,7 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textAllCaps="false"
-        android:padding="70px"
+
         android:fontFamily="@font/avenir_medium"
         android:textColor="#000000"
         android:textColorHint="#FFFFFF"

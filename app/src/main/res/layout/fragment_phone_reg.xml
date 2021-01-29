@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PhoneRegFragment">
+    tools:context=".login.PhoneRegFragment">
 
     <Button
         android:id="@+id/button_back"
@@ -44,7 +44,7 @@
         android:ems="10"
         android:fontFamily="@font/avenir_medium"
         android:inputType="phone"
-        android:padding="70px"
+
         android:text="+52"
         android:textAllCaps="false"
         android:textColor="#000000"
@@ -60,25 +60,24 @@
         android:id="@+id/editTextPhone"
         android:layout_width="234dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="448dp"
         android:background="@drawable/gray_textbox"
         android:ems="10"
         android:fontFamily="@font/avenir_medium"
         android:hint="888 888 8888"
         android:inputType="phone"
-        android:padding="70px"
+
+
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.796"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_about_you"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintStart_toEndOf="@+id/editTextPhoneArea"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245" />
 
     <Button
-        android:id="@+id/continue_about_you"
+        android:id="@+id/continue_phone_reg"
         android:layout_width="263dp"
         android:layout_height="57dp"
         android:background="@drawable/bottom_color"
@@ -106,7 +105,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/continue_about_you"
+        app:layout_constraintTop_toBottomOf="@+id/continue_phone_reg"
         app:layout_constraintVertical_bias="0.135" />
 
     <TextView
@@ -120,7 +119,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/continue_about_you"
+        app:layout_constraintTop_toBottomOf="@+id/continue_phone_reg"
         app:layout_constraintVertical_bias="0.395" />
 
 
